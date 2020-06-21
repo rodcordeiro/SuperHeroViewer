@@ -33,7 +33,7 @@ function loader(){
   if(heroInfo){
     return (
       <div className="container">
-      <img className="heroImage" onLoad={loader}  src={heroInfo.image.url} alt="Hero Image"/>
+      <img className="heroImage" onLoad={loader}  src={heroInfo.image.url} alt="ComicPhoto of the Hero"/>
       <div className='heroData'>
       <h1>
         {heroInfo.name}
