@@ -17,7 +17,7 @@ function HerosPage({ match, location }) {
     }
   api.get('http://cors-anywhere.herokuapp.com/https://superheroapi.com/api/2656765941096078/'+hero)
   .then(response => {
-    if (response.status == 200){
+    if (response.status === 200){
       setHeroInfo(response.data)
     } else {
       console.log(`Error ${response.status}\n$${response.error}`)
